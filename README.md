@@ -6,14 +6,13 @@ Gulp template with Browserify + Backbone
 ## Setup Instructions
 
 ### Environment
-Install node and gulp globally.
 <code>npm install -g gulp</code>
-
+Install node and gulp globally.
 
 ### Install project dependencies
 
 <code>npm install</code>
-To install all the project dependencies found in package.json type `npm install` from within the root directory (where the package.json is found).
+To install all the project dependencies found in package.json.
 
 ### Run gulp
 <code>gulp</code>
