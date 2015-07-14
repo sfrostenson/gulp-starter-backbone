@@ -16,7 +16,7 @@ To install all the project dependencies found in package.json.
 
 ### Run gulp
 <code>gulp</code>
-Launches watchify to monitor changes in src, browserify for bundling & a server automatically on localhost:3000. 
+Launches watchify to monitor changes in src, browserify for bundled.js in build & a server that refreshes automatically on changes. 
 
 <code>gulp build</code>
 Build step that compresses generated js/css. Must already have ran `gulp`at least once.
@@ -24,3 +24,5 @@ Build step that compresses generated js/css. Must already have ran `gulp`at leas
 
 ### Possible Improvements
 1. Automatic publishing to the CDN.
+2. Add universal SASS styles.
+3. Yeoman generator: https://github.com/texastribune/generator-tt-newsapps
