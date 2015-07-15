@@ -27,8 +27,8 @@ var browserifyTask = function(filename) {
     .transform('jstify', {engine: 'lodash'})
     .bundle()
     .on('error', handleErrors)
-    .pipe(source('bundled.js'))
-    .pipe(gulp.dest('./build'))
+    .pipe(source(config.outputName))
+    .pipe(gulp.dest(config.dest))
     .pipe(browserSync.reload({stream:true}));
     
 };
