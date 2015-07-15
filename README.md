@@ -2,27 +2,46 @@
 
 Gulp template with Browserify + Backbone
 
+## Dependencies
+This template uses gulp and browserify as a project scaffolding tool. To use it, you'll need node and gulp installed.
 
-## Setup Instructions
+To install node with homebrew:
+````
+brew install node
+````
+To install gulp globally:
+````
+npm install -g gulp
+````
 
-### Environment
-<code>npm install -g gulp</code>
-Install node and gulp globally.
+## Installing and using this template
+To install project dependencies in package.json:
+````
+npm install
+````
 
-### Install project dependencies
+To install additional dependencies and devDependencies:
+````
+npm install <PKGNAME> --save
+````
+````
+npm install <PKGNAME> --save-dev
+````
 
-<code>npm install</code>
-To install all the project dependencies found in package.json.
+To run gulp:
+````
+gulp
+````
+The default `gulp` command launches watchify to monitor changes in src, browserify to compile bundled.js in build & a server that refreshes automatically.
 
-### Run gulp
-<code>gulp</code>
-Launches watchify to monitor changes in src, browserify for bundled.js in build & a server that refreshes automatically on changes. 
+To minify files for production:
+````
+gulp build
+````
+The `gulp build` command compresses generated js/css. Must have run the defaukt `gulp` command at least once.
 
-<code>gulp build</code>
-Build step that compresses generated js/css. Must already have ran `gulp`at least once.
 
-
-### Possible Improvements
+## Possible Improvements
 1. Automatic publishing to the CDN.
 2. Add universal SASS styles.
 3. Yeoman generator: https://github.com/texastribune/generator-tt-newsapps
