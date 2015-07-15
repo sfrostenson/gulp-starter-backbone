@@ -1,6 +1,5 @@
 var dest = './build';
 var src = './src';
-var styles = './build/styles';
 
 module.exports = {
   'scripts': {
@@ -19,17 +18,21 @@ module.exports = {
     'src': src + '/*.html',
     'dest': dest
   },
-  'sass': {
+  'styles': {
     'src': src + '/**/*.{scss,sass}',
-    'dest': styles,
+    'dest': dest + '/css',
     'outputName': 'main-dev.css'
   },
+  'template': {
+    'src': src + '/js/templates/*.tpl'
+  },
+  'images' : {
+    'src' : src + '/img/**',
+    'dest': dest + '/img'
+  },
   'build': {
-    'cssSrc' : dest + '/styles/main-dev.css',
+    'cssSrc' : dest + '/css/main-dev.css',
     'jsSrc': dest + '/bundled.js',
     'dest': dest
-  },
-  'template': {
-    src: src + '/js/templates/*.tpl'
   }
 };

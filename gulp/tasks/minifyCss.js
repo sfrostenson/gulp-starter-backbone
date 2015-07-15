@@ -10,6 +10,6 @@ gulp.task('minifyCss', ['sass'], function() {
     .pipe(rename({
         suffix: '.min'
     }))
-    .pipe(gulp.dest(config.dest + '/styles'))
+    .pipe(gulp.dest(config.dest + '/css'))
     .pipe(size());
 });

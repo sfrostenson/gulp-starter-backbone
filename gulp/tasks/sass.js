@@ -4,7 +4,7 @@ var sourcemaps    = require('gulp-sourcemaps');
 var autoprefixer  = require('gulp-autoprefixer');
 var browserSync   = require('browser-sync');
 var reload        = browserSync.reload;
-var config        = require('../config').sass;
+var config        = require('../config').styles;
 var handleErrors  = require('../util/handleErrors');
 var rename        = require('gulp-rename');
 
