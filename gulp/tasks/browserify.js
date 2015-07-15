@@ -17,7 +17,7 @@ var handleErrors = require('../util/handleErrors');
  */
 
 gulp.task('browserify', function(){
-  browserifyTask('./src/js/main.js');
+  browserifyTask('./src/js/app.js');
 });
 
 var browserifyTask = function(filename) {

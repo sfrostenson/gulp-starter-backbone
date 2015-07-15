@@ -1,6 +1,6 @@
 # Gulp Template
 
-Gulp template with Browserify + Backbone
+Gulp template with browserify, jQuery, bootstrap, backbone/lodash, and D3/topojson dependencies.
 
 ## Dependencies
 This template uses gulp and browserify as a project scaffolding tool. To use it, you'll need node and gulp installed.
@@ -38,7 +38,7 @@ To minify files for production:
 ````
 gulp build
 ````
-The `gulp build` command compresses generated js/css. Must have run the defaukt `gulp` command at least once.
+The `gulp build` command compresses generated js/css. Must have run the default `gulp` command at least once.
 
 
 ## Possible Improvements
